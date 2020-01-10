@@ -20,6 +20,10 @@
     </plugins>
     </build>
 
-
+    <scm>
+        <url>https://github.com/MichalGozdera/maventest.git</url>
+        <connection>scm:git:https://github.com/MichalGozdera/maventest.git</connection>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
