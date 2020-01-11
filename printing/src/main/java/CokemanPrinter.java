@@ -43,26 +43,28 @@ public class CokemanPrinter extends AbstractMojo {
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
+        if (expirationDate != null) {
+            Resource rs = new Resource();
+            rs.setFiltering(false);
+            String destFold = destinationFolder.getPath();
+            rs.setDirectory(destFold);
+            project.addResource(rs);
+            String destFold1 = destinationFolder.getAbsolutePath();
+            Path directoryPath = getDefault().getPath(destFold1);
+            System.out.println("dsdsadsdf");
+            try {
+                Files.createDirectories(directoryPath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
-        Resource rs = new Resource();
-        rs.setFiltering(false);
-        String destFold = destinationFolder.getPath();
-        rs.setDirectory(destFold);
-        project.addResource(rs);
-        String destFold1 = destinationFolder.getAbsolutePath();
-        Path directoryPath = getDefault().getPath(destFold1);
-        System.out.println("dsdsadsdf");
-        try {
-            Files.createDirectories(directoryPath);
-        } catch (IOException e) {
-            e.printStackTrace();
+            Path filePath = getDefault().getPath(destFold1, expirationDate);
+            try (BufferedWriter writer = Files.newBufferedWriter(filePath, StandardCharsets.UTF_8)) {
+                writer.write(expirationDate);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
-        Path filePath = getDefault().getPath(destFold1, expirationDate);
-        try (BufferedWriter writer = Files.newBufferedWriter(filePath, StandardCharsets.UTF_8)) {
-            writer.write(expirationDate);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }
