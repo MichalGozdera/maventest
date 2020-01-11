@@ -4,6 +4,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>mvn</artifactId>
+    <packaging>pom</packaging>
     <version>1.3-SNAPSHOT</version>
     <build>
         <plugins>
@@ -17,7 +18,18 @@
         </plugin>
     </plugins>
     </build>
+    <modules>
+        <module>printing</module>
+        <module>dupa</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 
+        <maven.deploy.skip>true</maven.deploy.skip>
+        <short.comp.name>demo</short.comp.name>
+    </properties>
     <scm>
         <url>https://github.com/MichalGozdera/maventest.git</url>
         <connection>scm:git:https://github.com/MichalGozdera/maventest.git</connection>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mvn</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.3-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dupa</artifactId>
+    <groupId>cokeman</groupId>
+    <version>1.3-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>printing</artifactId>
+                <groupId>cokeman</groupId>
+                <version>${project.version}</version>
+
+                <executions>
+                    <execution>
+                        <id>generate-resources</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <expirationDate>${expirationDate}</expirationDate>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
