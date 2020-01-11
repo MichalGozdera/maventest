@@ -20,7 +20,7 @@ import static java.nio.file.FileSystems.*;
 @Mojo(name = "generate", defaultPhase = LifecyclePhase.GENERATE_RESOURCES)
 public class CokemanPrinter extends AbstractMojo {
 
-    @Parameter(alias = "expirationDate", required = false, defaultValue = "kutas")
+    @Parameter(alias = "expirationDate", required = false)
     private String expirationDate;
 
     @Parameter(alias = "destinationFolder", defaultValue = "${project.build.directory}/generated-resources/license")
