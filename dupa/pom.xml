@@ -3,13 +3,13 @@
     <parent>
         <artifactId>mvn</artifactId>
         <groupId>org.example</groupId>
-        <version>1.9</version>
+        <version>1.10-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>dupa</artifactId>
     <groupId>cokeman</groupId>
-    <version>1.9</version>
+    <version>1.10-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <build>
