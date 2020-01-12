@@ -1,18 +1,11 @@
-import java.io.BufferedWriter;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.util.logging.Logger;
-
-
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MainTestDupa {
+public class MainTestDupaTest {
 
     Logger logger = Logger.getGlobal();
 
