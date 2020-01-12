@@ -5,7 +5,7 @@
     <groupId>org.example</groupId>
     <artifactId>mvn</artifactId>
     <packaging>pom</packaging>
-    <version>1.10-SNAPSHOT</version>
+    <version>1.10</version>
     <build>
         <plugins>
         <plugin>
@@ -35,7 +35,7 @@
     <scm>
         <url>https://github.com/MichalGozdera/maventest.git</url>
         <connection>scm:git:https://github.com/MichalGozdera/maventest.git</connection>
-        <tag>HEAD</tag>
+        <tag>v1.10</tag>
     </scm>
 
 </project>
