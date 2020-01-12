@@ -29,7 +29,7 @@
                 </executions>
 
                 <configuration>
-                    <expirationDate>${expirationDate}</expirationDate>
+                    <expirationDate>${expiration.date}</expirationDate>
                 </configuration>
             </plugin>
         </plugins>
