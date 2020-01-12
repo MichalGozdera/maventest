@@ -19,10 +19,8 @@
     </plugins>
     </build>
     <modules>
-
         <module>printing</module>
         <module>dupa</module>
-
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
